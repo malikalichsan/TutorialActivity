@@ -28,12 +28,24 @@ import android.util.Log;
      @Override
      protected void onStart() {
          super.onStart();
-         Log.w("pesan", "onStart dijalankan")
+         Log.w("pesan", "onStart dijalankan");
      }
 
      @Override
      protected void onRestart() {
          super.onRestart();
          Log.w("pesan", "onRestart dijalankan");
+     }
+
+     @Override
+     protected void onStop() {
+         super.onStop();
+         Log.w("pesan", "onStop dijalankan");
+     }
+
+     @Override
+     protected void onDestroy() {
+         super.onDestroy();
+         Log.w("pesan", "onDestroy dijalankan");
      }
  }
